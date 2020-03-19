@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import pandas as pd
+from pandas import DataFrame
 from sklearn.externals import joblib 
 
 
@@ -13,7 +13,7 @@ def submit_it(request):
     seats = int(request.POST['seats'])
     
     data = [[mileage,performance,seats,budget]]
-    df_pred = pd.DataFrame(data, columns = ['Mileage', 'Engine_Power', 'Number_of_seats','Price'])
+    df_pred = DataFrame(data, columns = ['Mileage', 'Engine_Power', 'Number_of_seats','Price'])
 
     car_model = joblib.load('carsforu/cars.pkl')
     y_pred = car_model.predict(df_pred)
