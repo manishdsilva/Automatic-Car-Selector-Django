@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from pandas import DataFrame
-from sklearn.externals import joblib 
+import joblib 
 
 
 def index(request):
