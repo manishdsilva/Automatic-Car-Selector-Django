@@ -1,0 +1,70 @@
+{% load static %}
+<html>
+	<head>
+		<title>Cars4U</title>
+		<link rel = "stylesheet" type="text/css" href="static/cars.css"/> 
+	<head/>  
+	
+	<body>
+
+		<div id = "Header">
+			Cars4U
+		</div>
+		
+		<br>
+
+		
+		<img id = "photo"  src="{% static 'media/wallpaper.jpg' %}">
+		
+		<br> 
+		
+		<form action="submit_it" method="post">
+		 {% csrf_token %} 
+			<div id = "Field1">
+				Budget(In Lakhs):<br>
+				<input type="number"Name="budget" min ="3" required>
+			</div>
+			<br>
+
+			<div id = "Field2">
+				Mileage:<br>
+				<input type="number"Name="mileage" min ="5" required>
+			</div>
+			<br>
+
+			<div id = "Field3">
+				Engine Capacity(cc):<br>
+				<input type="number"Name="performance" min="100" required>
+			</div>
+			<br>
+
+		
+			<div id ="button"> 
+				<input type="radio"name="seats"value="2" required>2 Seater<br>
+				<input type="radio"name="seats"value="4">4 Seater<br>
+				<input type="radio"name="seats"value="5">5 Seater<br>
+				<input type="radio"name="seats"value="6">6 Seater<br>
+				<input type="radio"name="seats"value="7">7 Seater<br>
+				<input type="radio"name="seats"value="9">9 Seater<br>
+			</div>
+			
+			<br>
+	
+			<div id = "submit">
+				<button class="button" >SUBMIT</button>
+			</div>
+			
+		</form>
+		
+		
+		
+		<br>
+
+		<div id ="footer">
+			<img id = "pic1" src="{% static 'media/manish_pp.jpg' %}">
+			<h3>Manish D'Silva</h3>
+			<p>He is a student from Sardar Patel Institute of Technology and is extremely passionate about
+				Coding, Problem-Solving and Machine Learning</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+	<head>
+		<title>Cars4U</title>
+		<link rel = "stylesheet" type="text/css" href="static/cars.css"/> 
+	<head/>  
+	
+	<body>
+
+		<div id = "Header">
+			Cars4U
+		</div>
+		
+		<br>
+			
+		
+		<img id = "photo"  src="{% static 'media/wallpaper.jpg' %}">
+		
+		<br> 
+		
+		<div id = "Field1">
+		Cars Recommended for You<br>
+		</div>
+		<br>
+		
+		<div id = "Field1">
+		<a href="https://www.google.co.in/search?q={{suggested}}">{{suggested}}</a><br>
+		</div>
+		<br>
+
+		<div id ="footer">
+			<img id = "pic1" src="{% static 'media/manish_pp.jpg' %}">
+			<h3>Manish D'Silva</h3>
+			<p>He is a student from Sardar Patel Institute of Technology and is extremely passionate about
+				Coding, Problem-Solving and Machine Learning</p>
+		</div>
+	</body>
+</html>
