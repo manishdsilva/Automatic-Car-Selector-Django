@@ -1,0 +1,122 @@
+#Header{
+font-size:250%;
+background-color:#90EE90;
+color:blue;
+text-align:center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+border-radius:10px;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+padding:20px;
+}
+
+#Field1, #Field2, #Field3,#Field4, #Field5{
+font-size:150%;
+background-color:#90EE90;
+color:blue;
+text-align:center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+padding:20px;
+border-radius:10px;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+body{
+background-color:#000000;
+}
+
+#photo{
+border-radius:50px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width = 600px;
+}
+#button{
+padding:20px;
+border-radius:10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+text-align:center;
+font-size:150%;
+background-color:#90EE90;
+color:blue;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#submit{
+padding:20px;
+border-radius:10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+text-align:center;
+font-size:150%;
+background-color:#90EE90;
+color:blue;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#footer {
+height:135px;
+background-color:#FFFFEE;
+padding:10px;
+border-radius:10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#footer h3 {
+	font-size:150%;
+	padding-left:120px;
+	text-align:left;
+}
+
+#footer p{
+	text-align:left;
+	padding-left:120px;
+	text-align:justify;
+	
+}
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#66B2FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #E0E0E0;
+}
+
+.button:hover {background-color: blue}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#pic1{
+float:left;
+border-radius:40px;
+display: block;
+width :100px;
+height:130px;
+}
